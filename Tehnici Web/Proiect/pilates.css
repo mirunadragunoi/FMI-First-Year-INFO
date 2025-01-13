@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Sriracha&display=swap");
+
+:root {
+    --primary-color: #a0a5d8;
+    --navbar-color: #9B7EBD; 
+    --header-color: #c48cb3;
+    --explore-bg-color: #5974cf;
+    --primary-color-light: #7E60BF;
+    --primary-color-extra-light: #0b1b32;
+    --secondary-color: #f1e2f1;
+    --secondary-color-dark: #bb8cc7;
+    --text-light: #cbdffc;
+    --white: #e4dbdb;
+    --max-width: 1200px;
+    --fav-color: #6e5d91;
+    --color-cards:  rgb(243, 243, 243);
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+  
+.navbar {
+    width: 100%;
+    padding: 0.5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--navbar-color); 
+    border-radius: 0px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav__logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 1rem;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.link a:hover::after {
+    width: 50%;
+}
+
+.menu__container {
+    position: relative;
+}
+  
+.dropdown__container {
+    position: relative;
+    overflow: visible;
+  }
+  
+.dropdown__menu {
+    position: absolute;
+    margin-top: 0.20rem;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    top: calc(100% + 6px);
+    background-color: var(--fav-color);
+    box-shadow: 0px 8px 16px rgba(52, 65, 180, 0.2);
+    padding: 1rem;
+    gap: 0.5rem;
+    border-radius: 8px;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown__menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    text-align: left;
+    transition: color 0.3s;
+    }
+
+.dropdown__menu a:hover {
+    color: var(--secondary-color);
+    background-color: #8b7ba9;
+    border-radius: 5px;
+}
+
+.dropdown__container:hover > .dropdown__menu {
+    opacity: 1;
+    visibility: visible;
+    }
+
+.dropdown__menu.grid {
+    display: grid;
+    grid-template-columns: max-content;
+}
+  
+.bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--secondary-color);
+    z-index: -1;
+    overflow: visible;
+}
+
+.titlu__video {
+    margin-top: 9rem;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 6rem;
+    color: var(--white);
+    text-shadow: 1px 1px 2px black, -1px -1px 2px gray;
+    margin-bottom: 1rem;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.navbar__workout {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.nav-categories {
+    list-style: none;
+    display: flex;
+    gap: 15rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+    background-color: #8b7ba9;
+    border-radius: 5px;
+}
+
+.fbpilates-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.fbpilates-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.fbpilates-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.fbpilates-cards a, .peretepilates-cards a {
+    text-decoration: none;
+}
+
+.fbpilates-card {
+    background-color: var(--color-cards);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.fbpilates-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fbpilates-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.category {
+    color: #68a065;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 15px 20px 5px;
+}
+
+.fbpilates-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 20px;
+}
+
+.info {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0 20px 20px;
+}
+
+.fbpilates-section::after {
+    content: "";
+    display: block;
+    width: 100%;           
+    max-width: 1200px;     
+    height: 1px;          
+    background-color: #ddd; 
+    margin: 20px auto;     
+}
+
+.peretepilates-section {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.peretepilates-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.peretepilates-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.peretepilates-card {
+    background-color: var(--color-cards);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.peretepilates-card:hover {
+    transform: translateY(-5px);
+}
+
+.peretepilates-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.category {
+    color: #68a065;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 15px 20px 5px;
+}
+
+.peretepilates-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 20px;
+}
+
+.info {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0 20px 20px;
+}
+
+.peretepilates-section::after {
+    content: "";
+    display: block;
+    width: 100%;           
+    max-width: 1200px;     
+    height: 1px;          
+    background-color: #ddd; 
+    margin: 20px auto;     
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+      padding: 0.5rem 2rem;
+    }
+    .nav__links {
+      gap: 4rem;
+    }
+    .header__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .header__content h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    .header__image img {
+      max-width: 300px;
+    }
+    .explore__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+    .header__content h1 {
+      font-size: 2.5rem;
+    }
+    .header__content h4 {
+      font-size: 1.2rem;
+    }
+    .explore__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .nav__links {
+      gap: 2rem;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav__links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .dropdown__menu {
+      position: relative;
+      display: block;
+      transform: none;
+      opacity: 1;
+      box-shadow: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+  
+    .header__container {
+        flex-direction: column;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes expand {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50px;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+

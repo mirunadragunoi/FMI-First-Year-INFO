@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life</title>
+    <link rel="stylesheet" href="pranz.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav__logo">
+            <a href="#"><img src="healthy-lifestyle.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Acasă</a></li>
+            
+            <li class="link">
+              <div class="menu__container dropdown__container">
+                <a href="sport.html">Sport</a>
+                <div class="dropdown__menu grid">
+                  <a href="cardio.html"><span>Cardio</span></a>
+                  <a href="pilates.html"><span>Pilates</span></a>
+                  <a href="yoga.html"><span>Yoga</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="link">
+              <div class="menu__container dropdown__container">
+                <a href="retete.html">Rețete sănătoase</a>
+                <div class="dropdown__menu grid">
+                  <a href="micdejun.html"><span>Mic dejun</span></a>
+                  <a href="pranz.html"><span>Prânz</span></a>
+                  <a href="cina.html"><span>Cină</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="link"><a href="sfaturi.html">Sfaturi</a></li>
+            <li class="link"><a href="calckcal.html">Calculator calorii</a></li>
+        </ul>
+    </nav>
+
+    <section class="header-section">
+      <div class="text-container">
+          <h4>Ți-ai servit</h4>
+          <h1>Prânzul?</h1>
+          <p>
+            Prânzul este a doua masă importantă a zilei și adesea cea mai bogată caloric.
+            Acum este momentul să consumăm proteine cu valoare înaltă (pește, fructe de mare, 
+            carne de curcan sau de pui), legume (broccoli, conopidă, spanac, varză,etc.) sub 
+            formă de de supe/ciorbe/creme de legume/salate, leguminoase (linte, năut, fasole 
+            boabe, etc), cereale (orez brun sau basmati, paste din făină integrală sau din orez, 
+            etc.).
+          </p>
+      </div>
+      <div class="image-container">
+        <div class="yellow-background"></div>
+        <img src="pranzbanner.jpg" alt="Breakfast bowl">
+    </div>
+    </section>
+
+    <section class="recipe-section">
+      <h1>Idei de prânzuri<br>sănătoase.</h1>
+      <p class="subtitle">
+        Explorează website-ul nostru ca să te inspiri pentru a-ți alcătui un prânz
+        copios, dar și sănătos, având grijă ca farfuria să conțină toți 
+        nutrienții necesari.
+      </p>
+    
+      <div class="recipe-cards">
+
+        <!-- Recipe Card 1 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe1-toggle" class="toggle">
+          <label for="recipe1-toggle" class="recipe-content">
+            <h3>Cartofi la cuptor cu ouă poșate</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 40 Minute</p>
+                <p><span class="icon">🍽️</span> 2 Porții</p>
+                <p class="calories">457 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-cartofi</li>
+                  <li>-2 ouă</li>
+                  <li>-avocado</li>
+                  <li>-baby spanac și salată</li>
+                  <li>-condimente</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz1.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+              Se curăță cartofii, se taie în fâșii și se presară cu condimentele
+              preferate. Se pun la cuptor timp de 20 de minute la 180 de grade, 
+              timp în care se pun ouăle în apă fierbinte la poșat. Avocado se taie 
+              feliuțe și se pune pe patul de salată și baby spanac. La sfârșit, se adaugă 
+              ouăle și cartofii.
+            </p>
+            <label for="recipe1-toggle" class="close">Închide</label>
+          </div>
+        </div>
+    
+        <!-- Recipe Card 2 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe2-toggle" class="toggle">
+          <label for="recipe2-toggle" class="recipe-content">
+            <h3>Paste cu pesto verde și legume</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 45 Minute</p>
+                <p><span class="icon">🍽️</span> 2 Porții</p>
+                <p class="calories">561 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-paste</li>
+                  <li>-pesto</li>
+                  <li>-ciuperci, brocoli</li>
+                  <li>-roșii chery, spanac</li>
+                  <li>-avocado</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz2.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+               Într-un vas, se pune apă la fiert cu un praf de sare. În acest
+               timp, se curăță legumele după preferințe și se condimentează, 
+               urmând să fie puse pentru 20 de minute la Airfryer. Pastele se 
+               adaugă în apă până se fierb. După ce este scursă apa, se adaugă 
+               sosul de pesto verde și se amestecă. La sfârșit, totul se așează 
+               frumos pe o farfurie.
+            </p>
+            <label for="recipe2-toggle" class="close">Închide</label>
+          </div>
+        </div>
+    
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe3-toggle" class="toggle">
+          <label for="recipe3-toggle" class="recipe-content">
+            <h3>Piept de pui la grătar cu legume</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 40 Minute</p>
+                <p><span class="icon">🍽️</span> 2 Porții</p>
+                <p class="calories">467 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-piept de pui</li>
+                  <li>-legume după preferințe</li>
+                  <li>-avocado</li>
+                  <li>-salată</li>
+                  <li>-condimente</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz3.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+              Se curăță pieptul de pui, se condimentează și se pune într-o 
+              tavă pe hârtie de copt la cuptor pentru 30 de minute. În acest
+              timp, se pregătesc legumele după preferințe (morcovi, roșii, ceapă)
+              și se pun la Airfryer. Se pregătește și o pastă de avocado, 
+              adăugând condimente după preferință. Pentru savoare, la sfârșit, peste
+              ingredientele din farfurie se pot pune câteva picături de 
+              lămâie proaspătă.
+            </p>
+            <label for="recipe3-toggle" class="close">Închide</label>
+          </div>
+        </div>
+    
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe4-toggle" class="toggle">
+          <label for="recipe4-toggle" class="recipe-content">
+            <h3>Piure cu broccoli și chifteluțe</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 60 Minute</p>
+                <p><span class="icon">🍽️</span> 2 Porții</p>
+                <p class="calories">624 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-cartofi dulci</li>
+                  <li>-carne de pui</li>
+                  <li>-broccoli</li>
+                  <li>-condimente după gust</li>
+                  <li>-ulei de măsline</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz4.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+              Se curăță cartofii și se pun la fiert. În acest timp, se toacă
+              carnea de pui, ulterior adăugând condimentele. Într-o tigaie 
+              încinsă cu ulei, se pun biluțele de carne și se prăjesc pe 
+              ambele părți. Bucățile de broccoli se condimentează și se pun 
+              la Airfryer. După ce cartofii au fost fierți, se pisează până 
+              ajung o pastă omogenă.
+            </p>
+            <label for="recipe4-toggle" class="close">Închide</label>
+          </div>
+        </div>
+    
+        <!-- Recipe Card 5 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe5-toggle" class="toggle">
+          <label for="recipe5-toggle" class="recipe-content">
+            <h3>Creveți, cartofi și varză Bruxelles</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 45 Minute</p>
+                <p><span class="icon">🍽️</span> 2 Porții</p>
+                <p class="calories">590 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-creveți</li>
+                  <li>-varză de Bruxelles</li>
+                  <li>-cartofi</li>
+                  <li>-condimente</li>
+                  <li>-ulei de măsline</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz5.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+              Se curăță creveții și se pun într-o tigaie încină cu 
+              condimentele preferate și uleiul de măsline. Se lasă acolo 
+              până se rumenesc. În acest timp, carofii se condimentează și se 
+              pun la cuptor. După ce sunt gata creveții, varza de Bruxelles se trage
+              și ea la tigaie. 
+            </p>
+            <label for="recipe5-toggle" class="close">Închide</label>
+          </div>
+        </div>
+
+        <!-- Recipe Card 6 -->
+        <div class="recipe-card">
+          <input type="checkbox" id="recipe6-toggle" class="toggle">
+          <label for="recipe6-toggle" class="recipe-content">
+            <h3>Somon cu orez și legume</h3>
+            <div class="recipe-info">
+              <div class="text-info">
+                <p><span class="icon">⏱️</span> 30 Minute</p>
+                <p><span class="icon">🍽️</span> 1 Porții</p>
+                <p class="calories">412 Calorii</p>
+              </div>
+              <div class="ingrediente">
+                <p>
+                Ingrediente:
+                <ul>
+                  <li>-somon</li>
+                  <li>-orez</li>
+                  <li>-sos de soia</li>
+                  <li>-legume după preferințe</li>
+                  <li>-condimente</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </label>
+          <div class="recipe-image">
+            <img src="pranz6.jpg" alt="Creamy Meatballs & Pasta">
+          </div>
+          <div class="recipe-details">
+            <h2>Etape:</h2>
+            <p>
+              Somonul se pune la copt într-o tavă cu hârtie de copt, la 200 de
+              grade, timp de 30 de minute. Orezul se fierbe până se înmoaie, fiind
+              asezonat cu condimentele preferate, la fel ca somonul. Se pregătesc 
+              și legumele crude după preferințe (castraveți, morcovi, fasole, avocado).
+              Când somonul este aproape gata, se pune pe deasupra lui sosul de soia 
+              pentru o aromă mai delicată.
+            </p>
+            <label for="recipe6-toggle" class="close">Închide</label>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+        <p>made by miru</p>
+    </footer>
+</body>
+</html>

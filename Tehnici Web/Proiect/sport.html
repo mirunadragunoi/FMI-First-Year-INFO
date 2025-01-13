@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life</title>
+    <link rel="stylesheet" href="sportstyle.css">
+    <script type="text/javascript" src="sport.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav__logo">
+            <a href="#"><img src="healthy-lifestyle.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Acasă</a></li>
+            
+            <li class="link">
+              <div class="menu__container dropdown__container">
+                <a href="sport.html">Sport</a>
+                <div class="dropdown__menu grid">
+                  <a href="cardio.html"><span>Cardio</span></a>
+                  <a href="pilates.html"><span>Pilates</span></a>
+                  <a href="yoga.html"><span>Yoga</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="link">
+              <div class="menu__container dropdown__container">
+                <a href="retete.html">Rețete sănătoase</a>
+                <div class="dropdown__menu grid">
+                  <a href="micdejun.html"><span>Mic dejun</span></a>
+                  <a href="pranz.html"><span>Prânz</span></a>
+                  <a href="cina.html"><span>Cină</span></a>
+                </div>
+              </div>
+            </li>
+            
+            <li class="link"><a href="sfaturi.html">Sfaturi</a></li>
+            <li class="link"><a href="calckcal.html">Calculator calorii</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+      <div class="header-content">
+          <h1>MOTIVEAZĂ-TE SPRE BINE</h1>
+          <p>oriunde, oricând</p>
+          <a href="cardio.html" class="button">ÎNCEPE ANTRENAMENTELE</a>
+          <p>aici cu diferite secțiuni</p>
+      </div>
+    </header>
+
+    <section class="info-section">
+        <h2>Alătură-te mișcării</h2>
+        <p>
+          Această secțiune a website-ului nostru îți oferă o 
+              multitudine de opțiuni de exerciții în funcție de 
+              propriile preferințe. Pe lângă îmbunătățirea formei 
+              fizice, ajută și la crearea unei bune stări de spirit.
+        </p>
+        <a href="cardio.html" class="button">Începe astăzi</a>
+
+        <div class="interactive-section">
+          <h2>Adaugă noi activități</h2>
+          <input type="text" id="activityInput" placeholder="Introduceți activitatea dorită..." class="input-text" />
+          <button id="addElementBtn" class="button">Adaugă activitate</button>
+          <button id="clearElementsBtn" class="button">Șterge toate activitățile</button>
+          <div id="dynamicContainer" class="dynamic-container"></div>
+       </div>
+    </section>
+ 
+    <section class="categorii__sport">
+      <a href="cardio.html">
+        <div class="cardio__section">
+          <div class="cardio__content">
+            <span class="cardio__number">01</span>
+            <h3>Cardio</h3>
+            <p>
+              Exercițiile cardio implică solicitarea 
+              crescută a sistemului cardiovascular și a sistemului 
+              respirator pentru a furniza oxigen și energie 
+              organismului pe o perioadă mai înlungată.
+            </p>
+          </div>
+          <div class="cardio__image">
+            <img src="cardio.png" alt="Cardio image">
+          </div>
+        </div>
+      </a>
+
+      <a href="pilates.html">
+        <div class="pilates__section">
+          <div class="pilates__content">
+            <span class="pilates__number">02</span>
+            <h3>Pilates</h3>
+            <p>
+              Pilates este o metodă de antrenament fizic care se 
+              concentrează pe dezvoltarea forței musculare, 
+              flexibilității și coordonării mișcărilor, prin 
+              intermediul unor exerciții ce implică întregul corp. 
+            </p>
+          </div>
+          <div class="pilates__image">
+            <img src="pilates.png" alt="Pilates image">
+          </div>
+        </div>
+      </a>
+
+      <a href="yoga.html">
+        <div class="yoga__section">
+          <div class="yoga__content">
+            <span class="yoga__number">03</span>
+            <h3>Yoga</h3>
+            <p>
+              Yoga este o practică ce implică anumite 
+              poziții corporale, concentrare și respirație profundă.
+              Practicarea regulată a exercițiilor de yoga poate 
+              îmbunatăți rezistența, forța, calmul, flexibilitatea și
+              bunăstarea.
+            </p>
+          </div>
+          <div class="yoga__image">
+            <img src="yoga.png" alt="Yoga image">
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+        <p>made by miru</p>
+    </footer>
+</body>
+</html>
